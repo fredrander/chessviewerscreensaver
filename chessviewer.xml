@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="chessviewer" _label="Chess Viewer">
+
+  <vgroup>
+	  <string id="pgnfile" arg="--pgnfile %"
+	          _label="PGN File"/>
+	
+	  <number id="speed" type="slider" arg="--speed %"
+	          _label="Move Speed" _low-label="1" _high-label="10s"
+	          low="1" high="10" default="2"/>
+	
+	  <boolean id="random" arg-set="--random-order"
+	          _label="Random Order"/>
+  </vgroup>
+
+  <vgroup>
+	  <string id="engine" arg="--engine %"
+	          _label="UCI Chess Engine (Optional)"/>
+	
+	  <number id="engine_time" type="slider" arg="--engine-time %"
+	          _label="Engine Time" _low-label="0" _high-label="100%"
+	          low="0" high="100" default="20"/>
+  </vgroup>
+          
+  <_description>View chess games from a .pgn file.</_description>
+
+</screensaver>
+
